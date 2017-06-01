@@ -6,9 +6,12 @@ Test Setup  common.Begin web test
 Test Teardown  common.End web test
 *** Variables ***
 ${URL} =  http://amazon.ca
-${BROWSER} =  chrome
+${BROWSER} =  ie
 ${SEARCH_TERM} =  Lamborghini Gallardo
 
+
+ # copy/paste the below line to terminal window to execute
+ # pybot -d Results Tests/Product.robot
 
 *** Test Cases ***
 This is the first testcase.
@@ -16,3 +19,4 @@ This is the first testcase.
     Product.Search product from search results
     Product.Add product to cart
     Product.Begin checkout
+
